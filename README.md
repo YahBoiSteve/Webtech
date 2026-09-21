@@ -1,5 +1,14 @@
 ﻿# Webtech
 
+git add .
+git commit -m "your message here"
+git push
+
+If git push ever gets rejected because the remote has changes yours doesn't (like it did with the README), run this first, then push again:
+
+git pull --no-rebase
+git push
+
 
 THE ENTIRE BEE MOVIE SCRIPT
 
