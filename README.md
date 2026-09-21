@@ -1,27 +1,27 @@
 ﻿# Webtech
  
-Every time you finish editing and want it saved to GitHub: \
+Every time you finish editing and want it saved to GitHub:  
+  
+git add .  
+git commit -m "your message here"  
+git push  
 
-git add . \
-git commit -m "your message here" \
-git push \
+If git push gets rejected (remote has changes yours doesn't):  
 
-If git push gets rejected (remote has changes yours doesn't): \
+git pull --no-rebase  
+git push  
+  
+If git push fails with a 403 permission error (auth session reset — common on a fresh Codespace session):  
+  
+unset GITHUB_TOKEN  
+gh auth login  
 
-git pull --no-rebase \
-git push \
-
-If git push fails with a 403 permission error (auth session reset — common on a fresh Codespace session): \
-
-unset GITHUB_TOKEN \
-gh auth login \
-
-→ pick GitHub.com → HTTPS → Login with a web browser, grant repo access, then: \
-
-gh auth setup-git \
-git push \
-
-And always double check your terminal prompt shows (main) before running any of this — if it doesn't, cd Webtech first. \
+→ pick GitHub.com → HTTPS → Login with a web browser, grant repo access, then:  
+  
+gh auth setup-git  
+git push  
+  
+And always double check your terminal prompt shows (main) before running any of this — if it doesn't, cd Webtech first.  
 
 
 THE ENTIRE BEE MOVIE SCRIPT
