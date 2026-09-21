@@ -1,14 +1,27 @@
 ﻿# Webtech
  
-cd Webtech
-git add .
-git commit -m "your message here"
-git push
+Every time you finish editing and want it saved to GitHub:\
 
-If git push ever gets rejected because the remote has changes yours doesn't (like it did with the README), run this first, then push again:
+git add .\
+git commit -m "your message here"\
+git push\
 
-git pull --no-rebase
-git push
+If git push gets rejected (remote has changes yours doesn't):\
+
+git pull --no-rebase\
+git push\
+
+If git push fails with a 403 permission error (auth session reset — common on a fresh Codespace session):\
+
+unset GITHUB_TOKEN\
+gh auth login\
+
+→ pick GitHub.com → HTTPS → Login with a web browser, grant repo access, then:\
+
+gh auth setup-git\
+git push\
+
+And always double check your terminal prompt shows (main) before running any of this — if it doesn't, cd Webtech first.\
 
 
 THE ENTIRE BEE MOVIE SCRIPT
