@@ -4,9 +4,9 @@ Every time you finish editing and want it saved to GitHub:
   
 git add .  
 git commit -m "your message here"  
-unset GITHUB_TOKEN 
-gh auth setup-git
-git push  
+unset GITHUB_TOKEN  
+gh auth setup-git  
+git push    
 
 If git push gets rejected (remote has changes yours doesn't):  
 
