@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            background: #eaf3ff;
+            color: #1a1a1a;
+        }
+
+        header,
+        nav,
+        section,
+        footer {
+            width: 90%;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding-top: 30px;
+        }
+
+        nav {
+            text-align: center;
+            padding: 10px 0 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        section {
+            padding-top: 20px;
+            border-top: 1px solid #9bbde8;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        #about img {
+            display: block;
+            margin: 20px auto 0;
+            width: 150px;
+            height: 150px;
+        }
+
+        #skills ul {
+            display: inline-block;
+            text-align: left;
+            padding-left: 1.2em;
+            margin: 0 auto;
+        }
+
+        #projects {
+            display: block;
+        }
+
+        .card {
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        label,
+        input,
+        textarea,
+        button {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            font-family: Arial, sans-serif;
+        }
+
+        button {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Steve Degay</h1>
+        <p>Second-year CITCS student</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="01-basic.html">Home</a></li>
+            <li><a href="02-classes-ids.html">About</a></li>
+            <li><a href="https://media.tenor.com/7s4An_11BRIAAAAM/csgo-knife-tricks.gif">Skills</a></li>
+            <li><a href="04-projects.html">Projects</a></li>
+            <li><a href="05-contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>When I was a kid, I was young. Then I grew up.I am now a former kid.</p>
+        <img src="https://i.pinimg.com/736x/dd/25/9b/dd259b4fad711fc8f93fe35ebb0e75b0.jpg" alt="Profile Photo" width="150" height="150">
+    </section>
+    <section id="skills">
+        <h2>Skills:</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>PHP</li>
+            <li>MySQL</li>
+            <li>Git</li>
+        </ul>
+    </section>
+    <section id="projects">
+        <div class="card">
+            <h3>Project One</h3>
+            <p>Description here</p>
+            <a href="">View Project</a>
+        </div>
+        <div class="card">
+            <h3>Project Two</h3>
+            <p>Description here</p>
+            <a href="">View Project</a>
+        </div>
+        <div class="card">
+            <h3>Project Three</h3>
+            <p>Description here</p>
+            <a href="">View Project</a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <form>
+            <label>Name</label>
+            <input type="text">
+            <label>Email</label>
+            <input type="email">
+            <label>Subject</label>
+            <input type="text">
+            <label>Message</label>
+            <textarea></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <footer>
+        <p>© 2026 - Steve Degay</p>
+    </footer>
+</body>
+</html>
